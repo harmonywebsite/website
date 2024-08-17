@@ -1,0 +1,70 @@
+.main_banner {
+    position: relative;
+    
+  }
+
+  
+  .banner-container img {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+  }
+ 
+  
+ 
+
+  
+  
+  .previcondark, .nexticondark {
+    position: absolute;
+    z-index: 2;
+    display: block !important;
+    background-color: #333; /* Add a dark background color */
+    opacity: 0.5;
+    color: #fff; /* Add white text color */
+    border: none; /* Remove border */
+    padding: 22px 5px; /* Add some padding */
+    font-size: 24px; /* Increase font size for the arrow */
+    cursor: pointer; /* Add a pointer cursor */
+    border-radius: 10px;
+    color: linear-gradient(90deg, rgb(223, 43, 73), rgb(223, 60, 90));
+  }
+  
+  .previcondark {
+    left: 20px;
+    top: 50%; /* Vertically center the button */
+    transform: translateY(-50%); /* Vertically center the button */
+  }
+  
+  .previcondark:before {
+    content: "\25C0"; /* Left arrow Unicode character */
+  }
+  
+  .nexticondark {
+    right: 20px;
+    top: 50%; /* Vertically center the button */
+    transform: translateY(-50%); /* Vertically center the button */
+  }
+  
+  .nexticondark:before {
+    content: "\25B6"; /* Right arrow Unicode character */
+  }
+
+
+  /* ..........Media Screen........... */
+
+
+
+  @media only screen and (max-width:768px){
+
+    .previcondark, .nexticondark {
+
+        padding: 20px 8px; /* Add some padding */
+        font-size: 14px; /* Increase font size for the arrow */
+
+      }
+
+  }
